@@ -1,0 +1,7 @@
+
+alias path='echo $(pwd)'
+alias cls="clear && printf '\e[3J'"
+
+hideIcons() {defaults write com.apple.finder CreateDesktop $1 && killall Finder ;}
+jcar() {javac $1.java && java $1 ;}
+eval "$(/opt/homebrew/bin/brew shellenv)"
